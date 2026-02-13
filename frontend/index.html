@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Page</title>
+</head>
+<body>
+
+    <h2>Inventory Management</h2>
+    <h3>Add Product</h3>
+    <form action="/create" method="POST">
+        
+        <label>Product Name:</label><br>
+        <input type="text" name="product_name" required><br><br>
+
+        <label>MRP:</label><br>
+        <input type="number" name="mrp" step="0.01" required><br><br>
+
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" required><br><br>
+
+        <label>Expiry Date:</label><br>
+        <input type="date" name="expiry_date" required><br><br>
+
+        <label>Alert Threshold (Optional):</label><br>
+        <input type="number" name="alert_threshold"><br><br>
+
+        <button type="submit">Add Product</button>
+    </form>
+
+    <hr>
+    <h3>Product List</h3>
+
+    <table border="1" >
+        <tr>
+            <th>Product Name</th>
+            <th>MRP</th>
+            <th>Quantity</th>
+            <th>Expiry Date</th>
+            <th>Alert Threshold</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>Product Name Here</td>
+            <td>$$</td>
+            <td>111</td>
+            <td>1975-01-01</td>
+            <td>10</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
